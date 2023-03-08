@@ -1,0 +1,29 @@
+@mixin buttonStyle {
+  font-size: 17px;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+
+  &:hover {
+    background-color: rgb(169, 169, 169);
+  }
+}
+
+@mixin flexCenter ($flex-direction){
+  display: flex;
+  flex-direction: $flex-direction;
+  justify-content: center;
+  align-items: center;
+}
+
+.App {
+  flex: 1 0 auto;
+
+}
+
+footer {
+  flex-shrink: 0;
+
+}

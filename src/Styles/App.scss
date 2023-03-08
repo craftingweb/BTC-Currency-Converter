@@ -1,0 +1,51 @@
+@import './Variables.scss';
+
+:root {
+  button {
+    // To apply the button style for all buttons
+    @include buttonStyle;
+  }
+}
+
+header {
+
+  margin-bottom: 15px;
+
+  .header-title {
+    cursor: pointer;
+  }
+  
+  @include flexCenter(row);
+  justify-content: space-around;
+  
+  .header-buttons {
+    @include flexCenter(row);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 15px;
+
+  }
+}
+
+.convert-currency-container {
+  @include flexCenter(column);
+  gap: 10px;
+
+  .dropdown-currency {
+    @include buttonStyle;
+  }
+
+  input {
+    @include buttonStyle;
+    cursor: text;
+  }
+}
+
+.sort-button {
+  margin-bottom: 15px;
+}
+
+.time-container {
+  margin-top: 35px;
+}
